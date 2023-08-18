@@ -2,11 +2,17 @@ body {
   background-color: black !important;
   color: white !important;
 }
+:root {
+  --secondary-background: #121212;
+  --album-color: #1a1919;
+  --album-hover: #212121;
+  --green-color: #1db954;
+}
 
 .albumCard {
   height: 250px;
   width: 180px;
-  background-color: rgb(24, 23, 23);
+  background-color: var(--album-color);
   cursor: pointer;
 }
 .albumCard span:first-child {
@@ -18,7 +24,7 @@ body {
   color: grey;
 }
 .albumCard:hover {
-  background-color: rgb(34, 32, 32) !important;
+  background-color: var(--album-hover);
 }
 .albumPlayBtn {
   font-size: 40px;
@@ -26,11 +32,37 @@ body {
   position: absolute;
   border-radius: 50%;
   color: black;
-  background-color: rgb(17, 214, 17) !important;
+  background-color: var(--green-color);
   right: 5%;
   bottom: 5%;
   display: none;
 }
 .albumCard :hover .albumPlayBtn {
   display: block;
+}
+.pointer {
+  cursor: pointer;
+}
+.w-5 {
+  width: 5%;
+}
+.w-95 {
+  width: 95%;
+}
+.sideNav {
+  background-color: var(--secondary-background);
+  margin: 5px;
+  border-radius: 10px;
+}
+.sideNavMain div:first-child {
+  height: 15vh;
+}
+.sideNavMain div:last-child {
+  height: 80vh;
+}
+.HomeSection {
+  background-color: var(--secondary-background);
+  height: 96vh;
+  margin: 5px;
+  border-radius: 10px;
 }

@@ -9,18 +9,20 @@ const Header = () => {
     <div className="d-flex justify-content-between fw-semibold py-3 align-items-center">
       <div>
         <span className="me-3">
-          <BsArrowLeftCircleFill />
+          <BsArrowLeftCircleFill className="pointer" />
         </span>
         <span>
-          <BsArrowRightCircleFill />
+          <BsArrowRightCircleFill className="pointer" />
         </span>
       </div>
-      <div>
-        <span className="bg-white text-black py-1 px-3 rounded-pill me-3">
+      <div className="align-items-center">
+        <span className="bg-white text-black py-1 px-3 rounded-pill me-3 pointer">
           Explore Premium
         </span>
-        <span>
-          <BsArrowDownCircle className="me-1" />
+        <span className="pointer">
+          <span className="fs-6 me-2 ">
+            <BsArrowDownCircle />
+          </span>
           Install App
         </span>
         <span className="ms-3">
@@ -29,7 +31,7 @@ const Header = () => {
             alt=""
             width={24}
             height={24}
-            className="rounded-circle"
+            className="rounded-circle pointer"
           />
         </span>
       </div>

@@ -1,44 +1,23 @@
 import React from "react";
 import Header from "../components/Header";
-import AlbumComponent from "../components/AlbumComponent";
+import Main from "../components/Main";
+import SideNav from "../components/SideNav";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <h4 className="fw-bold">Recently played</h4>
-      <div className="mt-4">
-        <div className="row gap-4">
-          <div className="col-2">
-            <AlbumComponent
-              imgURL={
-                "https://i.scdn.co/image/ab67616d00001e02c5545f737b16ad5ee767b62a"
-              }
-              title={"Bekhayali"}
-              artist="Sachet Tandon"
-            />
-          </div>
-          <div className="col-2">
-            <AlbumComponent
-              imgURL={
-                "https://i.scdn.co/image/ab67616d00001e02c5545f737b16ad5ee767b62a"
-              }
-              title={"Bekhayali"}
-              artist="Sachet Tandon"
-            />
-          </div>
-          <div className="col-2">
-            <AlbumComponent
-              imgURL={
-                "https://i.scdn.co/image/ab67616d00001e02c5545f737b16ad5ee767b62a"
-              }
-              title={"Bekhayali"}
-              artist="Sachet Tandon"
-            />
+    <>
+      <div className="d-flex">
+        <div className="w-5">
+          <SideNav />
+        </div>
+        <div className="w-95 ">
+          <div className="p-2 HomeSection">
+            <Header />
+            <Main />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 const AlbumComponent = ({ imgURL, title, artist }) => {
   return (
-    <div className="albumCard rounded p-3">
+    <div className="albumCard rounded  p-3">
       <div className="position-relative">
         <img src={imgURL} className="w-100 rounded" alt="" />
 
