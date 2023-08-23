@@ -6,7 +6,7 @@ import {
 } from "react-icons/bs";
 const Header = () => {
   return (
-    <div className="d-flex justify-content-between fw-semibold py-3 align-items-center">
+    <div className="d-flex justify-content-between fw-semibold py-3 ms-3 align-items-center">
       <div>
         <span className="me-3">
           <BsArrowLeftCircleFill className="pointer" />
